@@ -14,7 +14,7 @@ namespace Api.Domain.Entities
                 
         }
 
-        public Detail(string title,string description,string categoryId)
+        public Detail(string title,string description,int categoryId)
         {
             Title = title;
             Description = description;
@@ -23,7 +23,7 @@ namespace Api.Domain.Entities
 
         public string Title{ get; set; }
         public string Description{ get; set; }
-        public string CategoryId{ get; set; }
+        public int CategoryId{ get; set; }
         public Category Category{ get; set; }
     }
 }
