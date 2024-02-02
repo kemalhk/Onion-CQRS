@@ -18,6 +18,6 @@ namespace Api.Domain.Entities
         {
             Name = name;
         }
-        public required string Name;
+        public  string Name;
     }
 }
