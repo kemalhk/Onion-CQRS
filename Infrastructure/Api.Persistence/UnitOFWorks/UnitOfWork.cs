@@ -1,16 +1,12 @@
 ﻿using Api.Application.Interfaces.Repositories;
+using Api.Application.Interfaces.UnitOfWorks;
 using Api.Persistence.Context;
 using Api.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Api.Persistence.UnitOFWorks
 {
-    internal class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly DbContext dbContext;
         public UnitOfWork(AppDbContext dbContext)

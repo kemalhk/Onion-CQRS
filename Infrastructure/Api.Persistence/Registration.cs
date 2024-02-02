@@ -1,16 +1,11 @@
 ﻿using Api.Application.Interfaces.Repositories;
+using Api.Application.Interfaces.UnitOfWorks;
 using Api.Persistence.Context;
 using Api.Persistence.Repositories;
 using Api.Persistence.UnitOFWorks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Api.Persistence
 {
